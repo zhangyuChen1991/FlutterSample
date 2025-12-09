@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'row_column_demo.dart';
+import 'expland_flexible.dart';
 import 'error_page.dart';
 
 void main() {
@@ -102,9 +103,9 @@ class _MyHomePageState extends State<MyHomePage> {
       case "Row / Column":
         page = RowColumnPage();
         break;
-      // case "Expanded & Flexible":
-      //   page = ExpandedFlexiblePage();
-      //   break;
+      case "Expanded & Flexible":
+        page = ExplandFlexiblePage();
+        break;
       // case "Padding / SizedBox / Spacer":
       //   page = PaddingPage();
       //   break;
@@ -132,6 +133,7 @@ class _MyHomePageState extends State<MyHomePage> {
     }
 
     print("gotoPage() $item");
+    print("gotoPage() $page");
 
     Navigator.push(context, MaterialPageRoute(builder: (_) => page));
   }
