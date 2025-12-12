@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'row_column_demo.dart';
 import 'expland_flexible.dart';
+import 'padding_sizedbox_spacer.dart';
 import 'error_page.dart';
 
 void main() {
@@ -44,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
     final List<String> items = [
       "Row / Column",
       "Expanded & Flexible",
-      "Padding / SizedBox/Spacer",
+      "Padding / SizedBox / Spacer",
       "Stack & Positioned",
       "SingleChildScrollView",
       "Container / Card",
@@ -106,9 +107,9 @@ class _MyHomePageState extends State<MyHomePage> {
       case "Expanded & Flexible":
         page = ExplandFlexiblePage();
         break;
-      // case "Padding / SizedBox / Spacer":
-      //   page = PaddingPage();
-      //   break;
+      case "Padding / SizedBox / Spacer":
+        page = PaddingPage();
+        break;
       // case "Stack & Positioned":
       //   page = StackPage();
       //   break;
@@ -133,7 +134,6 @@ class _MyHomePageState extends State<MyHomePage> {
     }
 
     print("gotoPage() $item");
-    print("gotoPage() $page");
 
     Navigator.push(context, MaterialPageRoute(builder: (_) => page));
   }
