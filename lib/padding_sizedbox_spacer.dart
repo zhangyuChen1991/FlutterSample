@@ -4,7 +4,7 @@ class PaddingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("ExplandFlexiblePage")),
+      appBar: AppBar(title: Text("PaddingSizedboxSpacer")),
       body: Column(
         //高度是整个屏幕
         crossAxisAlignment: CrossAxisAlignment.start,
