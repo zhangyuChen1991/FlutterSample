@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_sample1/stack_positioned.dart';
 import 'row_column_demo.dart';
 import 'expland_flexible.dart';
 import 'padding_sizedbox_spacer.dart';
@@ -110,9 +111,9 @@ class _MyHomePageState extends State<MyHomePage> {
       case "Padding / SizedBox / Spacer":
         page = PaddingPage();
         break;
-      // case "Stack & Positioned":
-      //   page = StackPage();
-      //   break;
+      case "Stack & Positioned":
+        page = StackPage();
+        break;
       // case "SingleChildScrollView":
       //   page = ScrollPage();
       //   break;
