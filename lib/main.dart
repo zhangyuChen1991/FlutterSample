@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_sample1/container_card.dart';
 import 'package:flutter_application_sample1/single_child_scrollview.dart';
 import 'package:flutter_application_sample1/stack_positioned.dart';
 import 'row_column_demo.dart';
@@ -118,9 +119,9 @@ class _MyHomePageState extends State<MyHomePage> {
       case "SingleChildScrollView":
         page = ScrollPage();
         break;
-      // case "Container / Card":
-      //   page = ContainerCardPage();
-      //   break;
+      case "Container / Card":
+        page = ContainerCardPage();
+        break;
       // case "GridView":
       //   page = GridViewPage();
       //   break;
