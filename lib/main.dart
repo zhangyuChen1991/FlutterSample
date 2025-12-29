@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_sample1/align_center.dart';
 import 'package:flutter_application_sample1/container_card.dart';
 import 'package:flutter_application_sample1/gridview1.dart';
 import 'package:flutter_application_sample1/gridview_sub_menu.dart';
@@ -127,9 +128,9 @@ class _MyHomePageState extends State<MyHomePage> {
       case "GridView":
         page = GridViewSubMenuPage();
         break;
-      // case "Align / Center":
-      //   page = AlignCenterPage();
-      //   break;
+      case "Align / Center":
+        page = AlignCenterPage();
+        break;
       // case "Wrap":
       //   page = WrapPage();
       //   break;
