@@ -5,6 +5,7 @@ import 'package:flutter_application_sample1/gridview1.dart';
 import 'package:flutter_application_sample1/gridview_sub_menu.dart';
 import 'package:flutter_application_sample1/single_child_scrollview.dart';
 import 'package:flutter_application_sample1/stack_positioned.dart';
+import 'package:flutter_application_sample1/wrap.dart';
 import 'row_column_demo.dart';
 import 'expland_flexible.dart';
 import 'padding_sizedbox_spacer.dart';
@@ -131,15 +132,15 @@ class _MyHomePageState extends State<MyHomePage> {
       case "Align / Center":
         page = AlignCenterPage();
         break;
-      // case "Wrap":
-      //   page = WrapPage();
-      //   break;
+      case "Wrap":
+        page = WrapPage();
+        break;
 
       default:
         page = ErrorPage();
     }
 
-    print("gotoPage() $item");
+    print("gotoPage() $page");
 
     Navigator.push(context, MaterialPageRoute(builder: (_) => page));
   }
